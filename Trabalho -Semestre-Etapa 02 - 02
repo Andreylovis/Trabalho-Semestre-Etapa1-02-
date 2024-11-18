@@ -34,10 +34,7 @@ class MainActivity : AppCompatActivity() {
         galleryLauncher.launch("image/*")
     }
 }
-Layout XML (activity_main.xml):
 
-xml
-Copiar código
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -53,19 +50,11 @@ Copiar código
         android:scaleType="centerCrop"
         android:contentDescription="Clique para selecionar imagem" />
 </LinearLayout>
-Exemplo 2: Usar a Câmera para Capturar Foto
-Este app permite capturar uma foto usando a câmera do dispositivo.
-
-Passos:
 
 Adicione a permissão de uso da câmera no AndroidManifest.xml:
-xml
-Copiar código
-<uses-permission android:name="android.permission.CAMERA" />
-Código Kotlin (MainActivity.kt):
 
-kotlin
-Copiar código
+<uses-permission android:name="android.permission.CAMERA" />
+
 import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Bundle
@@ -104,15 +93,6 @@ class MainActivity : AppCompatActivity() {
     }
 }
 Layout XML (activity_main.xml):
-
-xml
-Copiar código
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
 
     <ImageView
         android:id="@+id/imageView"
